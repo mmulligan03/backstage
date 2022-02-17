@@ -1366,6 +1366,15 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@backstage/catalog-client@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.npmjs.org/@backstage/catalog-client/-/catalog-client-0.6.0.tgz#d99e7c65329f9a79e529f0793e374ab87c9c5a1e"
+  integrity sha512-UtrCKBKZUBCeZ0Ls1CUg90lyHH8s5YixFmky0/HxHrKk29791p11gDUHDjhbD03oU5GaBPhwe7dqD14HruyCeQ==
+  dependencies:
+    "@backstage/catalog-model" "^0.9.10"
+    "@backstage/errors" "^0.2.0"
+    cross-fetch "^3.0.6"
+
 "@backstage/core-components@*", "@backstage/core-components@^0.8.0", "@backstage/core-components@^0.8.7":
   version "0.8.7"
   resolved "https://registry.npmjs.org/@backstage/core-components/-/core-components-0.8.7.tgz#c4bb9760d57971882065415e6e715eb750db2392"
@@ -1409,6 +1418,49 @@
     zen-observable "^0.8.15"
     zod "^3.11.6"
 
+"@backstage/core-components@^0.8.8":
+  version "0.8.8"
+  resolved "https://registry.npmjs.org/@backstage/core-components/-/core-components-0.8.8.tgz#3c571161e8f9fdc558dbb27fc7a95248651de30e"
+  integrity sha512-RV4WBnnpDiUt4itoUQZ3fiytjoVKUK63e87Oomi4lN/LF7zDmKOYOtlN2yHGgS0UdkACHKxMEa9KZlGm2XegCA==
+  dependencies:
+    "@backstage/config" "^0.1.13"
+    "@backstage/core-plugin-api" "^0.6.0"
+    "@backstage/errors" "^0.2.0"
+    "@backstage/theme" "^0.2.14"
+    "@material-table/core" "^3.1.0"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.57"
+    "@types/react-sparklines" "^1.7.0"
+    "@types/react-text-truncate" "^0.14.0"
+    ansi-regex "^6.0.1"
+    classnames "^2.2.6"
+    d3-selection "^3.0.0"
+    d3-shape "^3.0.0"
+    d3-zoom "^3.0.0"
+    dagre "^0.8.5"
+    history "^5.0.0"
+    immer "^9.0.1"
+    lodash "^4.17.21"
+    pluralize "^8.0.0"
+    prop-types "^15.7.2"
+    qs "^6.9.4"
+    rc-progress "3.2.4"
+    react-helmet "6.1.0"
+    react-hook-form "^7.12.2"
+    react-markdown "^8.0.0"
+    react-router "6.0.0-beta.0"
+    react-router-dom "6.0.0-beta.0"
+    react-sparklines "^1.7.0"
+    react-syntax-highlighter "^15.4.5"
+    react-text-truncate "^0.17.0"
+    react-use "^17.2.4"
+    react-virtualized-auto-sizer "^1.0.6"
+    react-window "^1.8.6"
+    remark-gfm "^3.0.1"
+    zen-observable "^0.8.15"
+    zod "^3.11.6"
+
 "@backstage/core-plugin-api@^0.4.0":
   version "0.4.1"
   resolved "https://registry.npmjs.org/@backstage/core-plugin-api/-/core-plugin-api-0.4.1.tgz#c0a13504bdfa61ae3d0db96934cd6c32a7574446"
@@ -1425,7 +1477,7 @@
     react-use "^17.2.4"
     zen-observable "^0.8.15"
 
-"@backstage/integration-react@^0.1.10", "@backstage/integration-react@^0.1.20":
+"@backstage/integration-react@^0.1.10":
   version "0.1.20"
   resolved "https://registry.npmjs.org/@backstage/integration-react/-/integration-react-0.1.20.tgz#53610c718f963018d16496aa345926740b4eb131"
   integrity sha512-vX65MB+Xd51wFcG5PbRbDlxN9Ti7pIlklbWWXZrxpeyR9h9FsXjKIioeP8kKqOYRTUgfvLutnU2FrTL2tulGGw==
@@ -1440,7 +1492,49 @@
     "@material-ui/lab" "4.0.0-alpha.57"
     react-use "^17.2.4"
 
-"@backstage/plugin-catalog-react@^0.6.13", "@backstage/plugin-catalog-react@^0.6.5":
+"@backstage/integration-react@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.npmjs.org/@backstage/integration-react/-/integration-react-0.1.21.tgz#57b65922d78a8bf561d11483cb76bb3b571594a9"
+  integrity sha512-cwsSfThCsWGV7U/6/he8n7ARWobuv7DMEfCENb7t6bfXOhMZWjKJNxgt/zoFUXGdbOWbOj6NiMtqW1/q7xcidQ==
+  dependencies:
+    "@backstage/config" "^0.1.13"
+    "@backstage/core-components" "^0.8.8"
+    "@backstage/core-plugin-api" "^0.6.0"
+    "@backstage/integration" "^0.7.2"
+    "@backstage/theme" "^0.2.14"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.57"
+    react-use "^17.2.4"
+
+"@backstage/plugin-catalog-react@^0.6.14":
+  version "0.6.14"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog-react/-/plugin-catalog-react-0.6.14.tgz#bdea1daeba95256b5bd9962a5cedeb97bafceeb9"
+  integrity sha512-8ziYgMw/oS6HosLEOvDYYg9li3GgyiZolvq4gNbas5zCLKnCYoE4OvDAAHstT7C5npKnDlTo7c5lldA5Yq2ROQ==
+  dependencies:
+    "@backstage/catalog-client" "^0.6.0"
+    "@backstage/catalog-model" "^0.9.10"
+    "@backstage/core-components" "^0.8.8"
+    "@backstage/core-plugin-api" "^0.6.0"
+    "@backstage/errors" "^0.2.0"
+    "@backstage/integration" "^0.7.2"
+    "@backstage/plugin-permission-common" "^0.4.0"
+    "@backstage/plugin-permission-react" "^0.3.0"
+    "@backstage/types" "^0.1.1"
+    "@backstage/version-bridge" "^0.1.1"
+    "@material-ui/core" "^4.12.2"
+    "@material-ui/icons" "^4.9.1"
+    "@material-ui/lab" "4.0.0-alpha.57"
+    classnames "^2.2.6"
+    jwt-decode "^3.1.0"
+    lodash "^4.17.21"
+    qs "^6.9.4"
+    react-router "6.0.0-beta.0"
+    react-use "^17.2.4"
+    yaml "^1.10.0"
+    zen-observable "^0.8.15"
+
+"@backstage/plugin-catalog-react@^0.6.5":
   version "0.6.13"
   resolved "https://registry.npmjs.org/@backstage/plugin-catalog-react/-/plugin-catalog-react-0.6.13.tgz#b325eae501d3edeb8b7caef5d9615f2e632f5430"
   integrity sha512-XBwop7PwAZqfongx3KP6jAJar+MEscLSp8nLuHYX5XxA+suQNiBgi96uO3SEQmvtae+hvsRM7c0WHSxbYiXsDA==
@@ -1466,18 +1560,18 @@
     zen-observable "^0.8.15"
 
 "@backstage/plugin-catalog@*":
-  version "0.7.11"
-  resolved "https://registry.npmjs.org/@backstage/plugin-catalog/-/plugin-catalog-0.7.11.tgz#9cd1d5c272300e4678a3e3ad7675b5b36aa51002"
-  integrity sha512-D9QohgQJZfRSrQ7aTuI6fH4tXBloEpyAC+WnXKoCjPaLm9gVbFEdBoC2+M6MiCybahJxdRK+LsNAG+jZj3ZdIg==
+  version "0.7.12"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog/-/plugin-catalog-0.7.12.tgz#0a6d487b89177471bfeb1d13765eea2ba59224d7"
+  integrity sha512-/PQY9wJmw40ktgQ6FCl8xF9WMwKePfk6fyOwHDSx1Ld6hZbWUzPNaPvqRKb6N73LagezfxpIw3huqy8lU+gWEw==
   dependencies:
-    "@backstage/catalog-client" "^0.5.5"
+    "@backstage/catalog-client" "^0.6.0"
     "@backstage/catalog-model" "^0.9.10"
-    "@backstage/core-components" "^0.8.7"
+    "@backstage/core-components" "^0.8.8"
     "@backstage/core-plugin-api" "^0.6.0"
     "@backstage/errors" "^0.2.0"
-    "@backstage/integration-react" "^0.1.20"
+    "@backstage/integration-react" "^0.1.21"
     "@backstage/plugin-catalog-common" "^0.1.2"
-    "@backstage/plugin-catalog-react" "^0.6.13"
+    "@backstage/plugin-catalog-react" "^0.6.14"
     "@backstage/theme" "^0.2.14"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
@@ -2834,17 +2928,6 @@
     "@types/istanbul-reports" "^3.0.0"
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
-    chalk "^4.0.0"
-
-"@jest/types@^27.2.5":
-  version "27.2.5"
-  resolved "https://registry.npmjs.org/@jest/types/-/types-27.2.5.tgz#420765c052605e75686982d24b061b4cbba22132"
-  integrity sha512-nmuM4VuDtCZcY+eTpw+0nvstwReMsjPoj7ZR80/BbixulhLaiX+fbv8oeLW8WZlJMcsGQsTmMKT/iTZu1Uy/lQ==
-  dependencies:
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
 "@josephg/resolvable@^1.0.0":
@@ -5643,13 +5726,13 @@
   dependencies:
     "@types/jest" "*"
 
-"@types/jest@*", "@types/jest@^26.0.7":
-  version "26.0.22"
-  resolved "https://registry.npmjs.org/@types/jest/-/jest-26.0.22.tgz#8308a1debdf1b807aa47be2838acdcd91e88fbe6"
-  integrity sha512-eeWwWjlqxvBxc4oQdkueW5OF/gtfSceKk4OnOAGlUSwS/liBRtZppbJuz1YkgbrbfGOoeBHun9fOvXnjNwrSOw==
+"@types/jest@*", "@types/jest@^27.4.0":
+  version "27.4.0"
+  resolved "https://registry.npmjs.org/@types/jest/-/jest-27.4.0.tgz#037ab8b872067cae842a320841693080f9cb84ed"
+  integrity sha512-gHl8XuC1RZ8H2j5sHv/JqsaxXkDDM9iDOgu0Wp8sjs4u/snb2PVehyWXJPr+ORA0RPpgw231mnutWI1+0hgjIQ==
   dependencies:
-    jest-diff "^26.0.0"
-    pretty-format "^26.0.0"
+    jest-diff "^27.0.0"
+    pretty-format "^27.0.0"
 
 "@types/jquery@^3.3.34":
   version "3.5.13"
@@ -6422,13 +6505,6 @@
   version "15.0.4"
   resolved "https://registry.npmjs.org/@types/yargs/-/yargs-15.0.4.tgz#7e5d0f8ca25e9d5849f2ea443cf7c402decd8299"
   integrity sha512-9T1auFmbPZoxHz0enUFlUuKRy3it01R+hlggyVUMtnCTQRunsQYifnSGb8hET4Xo8yiC0o0r1paW3ud5+rbURg==
-  dependencies:
-    "@types/yargs-parser" "*"
-
-"@types/yargs@^16.0.0":
-  version "16.0.4"
-  resolved "https://registry.npmjs.org/@types/yargs/-/yargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
-  integrity sha512-T8Yc9wt/5LbJyCaLiHPReJa0kApcIgJ7Bn735GjItUfh08Z1pJvu8QZqb9s+mMvKV6WUQRV7K2R46YbjMXTTJw==
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -10414,6 +10490,11 @@ diff-sequences@^26.6.2:
   version "26.6.2"
   resolved "https://registry.npmjs.org/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
   integrity sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q==
+
+diff-sequences@^27.5.1:
+  version "27.5.1"
+  resolved "https://registry.npmjs.org/diff-sequences/-/diff-sequences-27.5.1.tgz#eaecc0d327fd68c8d9672a1e64ab8dccb2ef5327"
+  integrity sha512-k1gCAXAsNgLwEL+Y8Wvl+M6oEFj5bgazfZULpS5CneoPPXRaCCW7dm+q21Ky2VEE5X+VeRDBVg1Pcvvsr4TtNQ==
 
 diff3@0.0.3:
   version "0.0.3"
@@ -14752,7 +14833,7 @@ jest-css-modules@^2.1.0:
   dependencies:
     identity-obj-proxy "3.0.0"
 
-jest-diff@^26.0.0, jest-diff@^26.6.2:
+jest-diff@^26.6.2:
   version "26.6.2"
   resolved "https://registry.npmjs.org/jest-diff/-/jest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
   integrity sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==
@@ -14761,6 +14842,16 @@ jest-diff@^26.0.0, jest-diff@^26.6.2:
     diff-sequences "^26.6.2"
     jest-get-type "^26.3.0"
     pretty-format "^26.6.2"
+
+jest-diff@^27.0.0:
+  version "27.5.1"
+  resolved "https://registry.npmjs.org/jest-diff/-/jest-diff-27.5.1.tgz#a07f5011ac9e6643cf8a95a462b7b1ecf6680def"
+  integrity sha512-m0NvkX55LDt9T4mctTEgnZk3fmEg3NRYutvMPWM/0iPnkFj2wIeF45O1718cMSOFO1vINkqmxqD8vE37uTEbqw==
+  dependencies:
+    chalk "^4.0.0"
+    diff-sequences "^27.5.1"
+    jest-get-type "^27.5.1"
+    pretty-format "^27.5.1"
 
 jest-docblock@^26.0.0:
   version "26.0.0"
@@ -14809,6 +14900,11 @@ jest-get-type@^26.3.0:
   version "26.3.0"
   resolved "https://registry.npmjs.org/jest-get-type/-/jest-get-type-26.3.0.tgz#e97dc3c3f53c2b406ca7afaed4493b1d099199e0"
   integrity sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==
+
+jest-get-type@^27.5.1:
+  version "27.5.1"
+  resolved "https://registry.npmjs.org/jest-get-type/-/jest-get-type-27.5.1.tgz#3cd613c507b0f7ace013df407a1c1cd578bcb4f1"
+  integrity sha512-2KY95ksYSaK7DMBWQn6dQz3kqAf3BB64y2udeG+hv4KfSOb9qwcYQstTJc1KCbsix+wLZWZYN8t7nwX3GOBLRw==
 
 jest-haste-map@^26.6.2:
   version "26.6.2"
@@ -19673,7 +19769,7 @@ pretty-error@^4.0.0:
     lodash "^4.17.20"
     renderkid "^3.0.0"
 
-pretty-format@^26.0.0, pretty-format@^26.6.2:
+pretty-format@^26.6.2:
   version "26.6.2"
   resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
   integrity sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
@@ -19683,12 +19779,11 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-pretty-format@^27.0.2:
-  version "27.3.1"
-  resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-27.3.1.tgz#7e9486365ccdd4a502061fa761d3ab9ca1b78df5"
-  integrity sha512-DR/c+pvFc52nLimLROYjnXPtolawm+uWDxr4FjuLDLUn+ktWnSN851KoHwHzzqq6rfCOjkzN8FLgDrSub6UDuA==
+pretty-format@^27.0.0, pretty-format@^27.0.2, pretty-format@^27.5.1:
+  version "27.5.1"
+  resolved "https://registry.npmjs.org/pretty-format/-/pretty-format-27.5.1.tgz#2181879fdea51a7a5851fb39d920faa63f01d88e"
+  integrity sha512-Qb1gy5OrP5+zDf2Bvnzdl3jsTf1qXVMazbvCoKhtKqVs4/YK4ozX4gKQJJVyNe+cajNPn0KoC0MC3FUmaHWEmQ==
   dependencies:
-    "@jest/types" "^27.2.5"
     ansi-regex "^5.0.1"
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
