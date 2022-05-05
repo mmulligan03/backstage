@@ -33,7 +33,7 @@
     "start": "backstage-cli package start"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.7",
+    "@types/jest": "^27.5.0",
     "@types/node": "^14.14.32"
   },
   "files": [
